@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
+    private let _bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = UIColor.orange
+        let btn = UIButton(type: .custom)
+        btn.backgroundColor = UIColor.gray
+        btn.frame = CGRect(x: 10, y: 100, width: 100, height: 50)
+        btn.setTitle("Click", for: .normal)
+        view.addSubview(btn)
+        
+        let s = UISwitch(frame: CGRect(x: 10, y: 200, width: 100, height: 100))
+        view.addSubview(s)
+        btn.rx
+            .tap
+            .asObservable()
+            .subscribe(onNext: { (_) in
+                print("button click ...")
+                s.isOn = !s.isOn
+            })
+            .disposed(by: _bag)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
 
 }

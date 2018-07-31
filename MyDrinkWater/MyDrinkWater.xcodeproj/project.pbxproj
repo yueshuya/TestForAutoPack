@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219B8C9D2109C5E7003773AA /* aa.png in Resources */ = {isa = PBXBuildFile; fileRef = 219B8C9C2109C5E7003773AA /* aa.png */; };
 		21D0EAEF20FD835000D474A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0EAEE20FD835000D474A5 /* AppDelegate.swift */; };
 		21D0EAF120FD835000D474A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0EAF020FD835000D474A5 /* ViewController.swift */; };
 		21D0EAF420FD835000D474A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D0EAF220FD835000D474A5 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		219B8C9C2109C5E7003773AA /* aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aa.png; sourceTree = "<group>"; };
 		21A626630DB4B315232508E5 /* Pods-MyDrinkWater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDrinkWater.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDrinkWater/Pods-MyDrinkWater.release.xcconfig"; sourceTree = "<group>"; };
 		21D0EAEB20FD835000D474A5 /* MyDrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D0EAEE20FD835000D474A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		21D0EAED20FD835000D474A5 /* MyDrinkWater */ = {
 			isa = PBXGroup;
 			children = (
+				219B8C9C2109C5E7003773AA /* aa.png */,
 				21D0EAEE20FD835000D474A5 /* AppDelegate.swift */,
 				21D0EAF020FD835000D474A5 /* ViewController.swift */,
 				21D0EAF220FD835000D474A5 /* Main.storyboard */,
@@ -259,6 +262,7 @@
 				21D0EAF920FD835200D474A5 /* LaunchScreen.storyboard in Resources */,
 				21D0EAF620FD835200D474A5 /* Assets.xcassets in Resources */,
 				21D0EAF420FD835000D474A5 /* Main.storyboard in Resources */,
+				219B8C9D2109C5E7003773AA /* aa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

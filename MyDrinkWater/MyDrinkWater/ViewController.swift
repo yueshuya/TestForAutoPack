@@ -33,6 +33,18 @@ class ViewController: UIViewController {
                 s.isOn = !s.isOn
             })
             .disposed(by: _bag)
+        
+        
+        let image = UIImage(contentsOfFile: Bundle.main.path(forResource: "aa.png", ofType: nil)!)!
+        let imageView1 = UIImageView(image: image)
+        imageView1.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        let imageView2 = UIImageView(image: image)
+        imageView2.frame = CGRect(x: 100, y: 220, width: 100, height: 100)
+        
+        view.addSubview(imageView1)
+        view.addSubview(imageView2)
+        imageView1.addSubview(imageView2)
+        
     }
 
     
